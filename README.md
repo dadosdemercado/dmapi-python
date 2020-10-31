@@ -3,7 +3,7 @@
 This is a Python Client for
 [Dados de Mercado](https://www.dadosdemercado.com/)'s API.
 
-## Instalation
+## Installation
 
 ```
 pip3 install dmapi
