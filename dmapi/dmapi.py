@@ -1,4 +1,4 @@
-from requests import get
+from requests import codes, get
 from time import sleep
 
 VERSION = '0.0.1'
@@ -26,7 +26,7 @@ class DMAPI:
             headers=self._headers(),
         )
 
-        if response.status_code == 429:
+        if response.status_code == codes.TOO_MANY_REQUESTS:
             sleep(2 ** retry)
             return self._get(url, data, retry + 1)
 
