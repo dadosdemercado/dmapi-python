@@ -31,10 +31,16 @@ Please refer to the [documentation](https://www.dadosdemercado.com/api)
 for more details on the parameters available on each call.
 
 - `dm.companies()`
-- `dm.company(company_slug)`
-- `dm.financials(company_slug, [type, offset, limit])`
-- `dm.ratios(company_slug, [type, offset, limit, market])`
-- `dm.tickers()`
-- `dm.ticker(ticker, [from_date, to_date])`
-- `dm.price_indexes([from_date, to_date])`
-- `dm.selic()`
+- `dm.company(cvm_code)`
+- `dm.balances(cvm_code, [statement_type, reference_date])`
+- `dm.incomes(cvm_code, [statement_type, period_type])`
+- `dm.cash_flows(cvm_code, [statement_type, period_type])`
+- `dm.ratios(cvm_code)`
+- `dm.market_ratios(cvm_code)`
+- `dm.dividends(cvm_code)`
+- `dm.splits(cvm_code)`
+- `dm.tickers`
+- `dm.quotes(ticker)`
+- `dm.indexes`
+- `dm.estimates(index)`
+- `dm.yield_curves`
