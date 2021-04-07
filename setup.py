@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="dmapi",
-    version="0.0.1",
+    version="1.0.0",
     author="Dados de Mercado",
     author_email="api@dadosdemercado.com",
     description="A Python client for Dados de Mercado",
